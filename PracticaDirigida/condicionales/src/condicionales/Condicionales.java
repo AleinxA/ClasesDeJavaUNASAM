@@ -17,7 +17,7 @@ public class Condicionales {
 //        int a, b;
 //        
 //        a = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de a: "));
-//        b = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de a: "));
+//        b = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de b: "));
 //        
 //        if (a==b)
 //            JOptionPane.showMessageDialog(null, "Los numeros son iguales");
@@ -26,6 +26,33 @@ public class Condicionales {
 //                JOptionPane.showMessageDialog(null, b + " es mayor que " + a);
 //            else
 //                JOptionPane.showMessageDialog(null, a + " es mayor que " + b);
+//        int a, b, c;
+//        
+//        a = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de a: "));
+//        b = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de b: "));
+//        c = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de c: "));
+//        
+//        if (a<b && a<c)
+//            JOptionPane.showMessageDialog(null, "El menor es "+a);
+//            else
+//            if(b<a && b<c)
+//                JOptionPane.showMessageDialog(null, "El menor es "+b);
+//                else
+//                JOptionPane.showMessageDialog(null, "El menor es "+c);
+        int a, b, c;
+        
+        a = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de a: "));
+        b = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de b: "));
+        c = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de c: "));
+        
+        if (a>b && a>c)
+            JOptionPane.showMessageDialog(null, "El mayor es "+a);
+            else
+            if(b>a && b>c)
+                JOptionPane.showMessageDialog(null, "El mayor es "+b);
+                else
+                JOptionPane.showMessageDialog(null, "El mayor es "+c);
+        
     }
     
 }
