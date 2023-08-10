@@ -39,20 +39,39 @@ public class Condicionales {
 //                JOptionPane.showMessageDialog(null, "El menor es "+b);
 //                else
 //                JOptionPane.showMessageDialog(null, "El menor es "+c);
-        int a, b, c;
+//        int a, b, c;
+//        
+//        a = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de a: "));
+//        b = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de b: "));
+//        c = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de c: "));
+//        
+//        if (a>b && a>c)
+//            JOptionPane.showMessageDialog(null, "El mayor es "+a);
+//            else
+//            if(b>a && b>c)
+//                JOptionPane.showMessageDialog(null, "El mayor es "+b);
+//                else
+//                JOptionPane.showMessageDialog(null, "El mayor es "+c);
+        
+        int a, b, c, d, may1, may2, mayor;
         
         a = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de a: "));
         b = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de b: "));
         c = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de c: "));
+        d = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de d: "));
         
-        if (a>b && a>c)
-            JOptionPane.showMessageDialog(null, "El mayor es "+a);
-            else
-            if(b>a && b>c)
-                JOptionPane.showMessageDialog(null, "El mayor es "+b);
-                else
-                JOptionPane.showMessageDialog(null, "El mayor es "+c);
-        
+        if(a<b)
+            may1=b;
+        else
+            may1=a;
+        if(c<d)
+            may2=d;
+        else
+            may2=c;
+        if (may1<may2)
+            JOptionPane.showMessageDialog(null, "El mayor es "+ may2);
+        else
+            JOptionPane.showMessageDialog(null, "El mayor es "+ may1);
     }
     
 }
