@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package condicionales;
 
 import javax.swing.JOptionPane;
@@ -53,25 +49,40 @@ public class Condicionales {
 //                else
 //                JOptionPane.showMessageDialog(null, "El mayor es "+c);
         
-        int a, b, c, d, may1, may2, mayor;
-        
-        a = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de a: "));
-        b = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de b: "));
-        c = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de c: "));
-        d = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de d: "));
-        
-        if(a<b)
-            may1=b;
-        else
-            may1=a;
-        if(c<d)
-            may2=d;
-        else
-            may2=c;
-        if (may1<may2)
-            JOptionPane.showMessageDialog(null, "El mayor es "+ may2);
-        else
-            JOptionPane.showMessageDialog(null, "El mayor es "+ may1);
+//        int a, b, c, d, may1, may2, mayor;
+//        
+//        a = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de a: "));
+//        b = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de b: "));
+//        c = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de c: "));
+//        d = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de d: "));
+//        
+//        if(a<b)
+//            may1=b;
+//        else
+//            may1=a;
+//        if(c<d)
+//            may2=d;
+//        else
+//            may2=c;
+//        if (may1<may2)
+//            JOptionPane.showMessageDialog(null, "El mayor es "+ may2);
+//        else
+//            JOptionPane.showMessageDialog(null, "El mayor es "+ may1);
+            String nombre1 =JOptionPane.showInputDialog("Ingrese el nombre de la primera persona");
+            String nombre2 =JOptionPane.showInputDialog("Ingrese el nombre de la primera persona");
+            int edad1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad de " + nombre1));
+            int edad2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad de " + nombre2));
+            
+            if (edad1<edad2) {
+            JOptionPane.showMessageDialog(null, "La primera persona es mayor que la segunda persona.");
+                if (edad1>=18) {
+                    JOptionPane.showMessageDialog(null, "La primera persona puede votar");
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "La primera persona puede votar");
+                }
+            JOptionPane.showMessageDialog(null, "La segunda persona es mayor que la primera persona.");
+        }
     }
     
 }
